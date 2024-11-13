@@ -362,7 +362,7 @@ v0.8.0 / Thu, 5 Jan 2012
   * [1f78240](https://github.com/foreverjs/forever/commit/1f78240) [test minor] A couple of small updates for tests after recent API changes. Readd Worker.exitOnStop (`indexzero`)
   * [bde27e0](https://github.com/foreverjs/forever/commit/bde27e0) [refactor] Use the nssocket defined protocol for stopping and restarting worker processes (`indexzero`)
   * [dc0b457](https://github.com/foreverjs/forever/commit/dc0b457) [dist] Remove bin/forever-worker now that it `daemon.node` works again (`indexzero`)
-  * [9cee338](https://github.com/foreverjs/forever/commit/9cee338) [wtf.node] BLACK VOODOO MAGIC. `daemon.node` somehow works even though libuv isnt fork(2)-safe (`indexzero`)
+  * [9cee338](https://github.com/foreverjs/forever/commit/9cee338) [wtf.node] BLACK VOODOO MAGIC. `daemon.node` somehow works even though libuv isn't fork(2)-safe (`indexzero`)
   * [ebd80a2](https://github.com/foreverjs/forever/commit/ebd80a2) [refactor] Attempt to spawn workers via bin/forever-worker. (`indexzero`)
   * [8f9f0ad](https://github.com/foreverjs/forever/commit/8f9f0ad) [refactor] Significant refactor to how forever works in the rewrite (`indexzero`)
   * [bca8ed9](https://github.com/foreverjs/forever/commit/bca8ed9) [test] Basic CLI test in `sh` (`Maciej Małecki`)
@@ -374,7 +374,7 @@ v0.8.0 / Thu, 5 Jan 2012
   * [55d96b2](https://github.com/foreverjs/forever/commit/55d96b2) [fix] Wrap parsing data from socket into `try .. catch` (`Maciej Małecki`)
   * [85c4542](https://github.com/foreverjs/forever/commit/85c4542) [minor] Remove unused `daemon` require (`Maciej Małecki`)
   * [321c182](https://github.com/foreverjs/forever/commit/321c182) [refactor] Replace `daemon.node` with `child_process.fork` (`Maciej Małecki`)
-  * [df8d71d](https://github.com/foreverjs/forever/commit/df8d71d) [bin] Supress `stdout` and `stderr` when run as a fork (`Maciej Małecki`)
+  * [df8d71d](https://github.com/foreverjs/forever/commit/df8d71d) [bin] suppress `stdout` and `stderr` when run as a fork (`Maciej Małecki`)
   * [2ead453](https://github.com/foreverjs/forever/commit/2ead453) [test] Test `kill` action (`Maciej Małecki`)
   * [a0d09d2](https://github.com/foreverjs/forever/commit/a0d09d2) [api] `kill` action for `Worker` (`Maciej Małecki`)
   * [6517f74](https://github.com/foreverjs/forever/commit/6517f74) [test] Add `MonitorMock.kill` (`Maciej Małecki`)
@@ -444,7 +444,7 @@ v0.7.5 / Fri, 2 Dec 2011
   * [93482cb](https://github.com/foreverjs/forever/commit/93482cb) [refactor minor] Remove unused `tty` require (`Maciej Małecki`)
   * [4d3958e](https://github.com/foreverjs/forever/commit/4d3958e) [refactor] Better option parsing (`Maciej Małecki`)
   * [dde31b7](https://github.com/foreverjs/forever/commit/dde31b7) [refactor bin] Remove options parsing from bin (`Maciej Małecki`)
-  * [d793874](https://github.com/foreverjs/forever/commit/d793874) [api] Remove redudant `forever` options (`Maciej Małecki`)
+  * [d793874](https://github.com/foreverjs/forever/commit/d793874) [api] Remove redundant `forever` options (`Maciej Małecki`)
   * [c9ab4f0](https://github.com/foreverjs/forever/commit/c9ab4f0) [dist] Add `flatiron` dependency (`Maciej Małecki`)
   * [8abe38d](https://github.com/foreverjs/forever/commit/8abe38d) [refactor] Implement pass-through options for child (`Maciej Małecki`)
   * [b30316e](https://github.com/foreverjs/forever/commit/b30316e) [refactor] Use `utile.randomString` (`Maciej Małecki`)
@@ -476,7 +476,7 @@ v0.7.2 / Sat, 22 Oct 2011
 
 v0.7.1 / Sun, 9 Oct 2011
 ========================
-  * [d791422](https://github.com/foreverjs/forever/commit/d791422) [dist] Verion bump. 0.7.1 (`indexzero`)
+  * [d791422](https://github.com/foreverjs/forever/commit/d791422) [dist] version bump. 0.7.1 (`indexzero`)
   * [0d4f68e](https://github.com/foreverjs/forever/commit/0d4f68e) [fix] Pass proc.spawnWith to `forever.restart`. Fixes #116 (`indexzero`)
 
 v0.7.0 / Sat, 8 Oct 2011
@@ -595,7 +595,7 @@ v0.6.0 / Mon, 11 Jul 2011
   * [2a163d3](https://github.com/foreverjs/forever/commit/2a163d3) [dist] Add `portfinder` dependency to package.json (`indexzero`)
   * [57a5600](https://github.com/foreverjs/forever/commit/57a5600) [doc] Remove references to *.fvr files in README.md (`indexzero`)
   * [ef59672](https://github.com/foreverjs/forever/commit/ef59672) [test] Updated tests for refactor in previous commit (`indexzero`)
-  * [7ae870e](https://github.com/foreverjs/forever/commit/7ae870e) [refactor] **Major awesome breaking changes** Forever no longer uses *.fvr files in-favor of a TCP server in each forever process started by the CLI. Programmatic usage will require an additional call to `forever.createServer()` explicitally in order for your application to be available in `forever list` or `forever.list()` (`indexzero`)
+  * [7ae870e](https://github.com/foreverjs/forever/commit/7ae870e) [refactor] **Major awesome breaking changes** Forever no longer uses *.fvr files in-favor of a TCP server in each forever process started by the CLI. Programmatic usage will require an additional call to `forever.createServer()` explicitly in order for your application to be available in `forever list` or `forever.list()` (`indexzero`)
   * [a26cf9d](https://github.com/foreverjs/forever/commit/a26cf9d) [minor] Catch `uncaughtException` slightly more intelligently (`indexzero`)
   * [4446215](https://github.com/foreverjs/forever/commit/4446215) [api] Include uids in `forever list` (`indexzero`)
   * [57bc396](https://github.com/foreverjs/forever/commit/57bc396) [minor] Create `options.uid` by default in `.startDaemon()` if it is already not provided (`indexzero`)
@@ -767,4 +767,4 @@ v0.2.0 / Mon, 27 Sep 2010
   * [347dcaa](https://github.com/foreverjs/forever/commit/347dcaa) [minor] Updated contributors (`indexzero`)
   * [a4f1700](https://github.com/foreverjs/forever/commit/a4f1700) [api test doc dist] Version bump. Merged from donnerjack. Added ability to log to file(s). Updated docs. (`indexzero`)
   * [d5d2f1d](https://github.com/foreverjs/forever/commit/d5d2f1d) New-line at the end of file (`Fedor Indutny`)
-  * [73b52a4](https://github.com/foreverjs/forever/commit/73b52a4) Added chaining to run, simplyfied exports.run (`Fedor Indutny`)
+  * [73b52a4](https://github.com/foreverjs/forever/commit/73b52a4) Added chaining to run, simplified exports.run (`Fedor Indutny`)
